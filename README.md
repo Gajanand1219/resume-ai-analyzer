@@ -1,5 +1,14 @@
 # Resume AI Analyzer
 
+
+
+
+
+https://github.com/user-attachments/assets/b5fc2b90-eafa-4954-892d-f626056c019d
+
+
+
+
 This project is a **FastAPI-based web service** for analyzing resumes against job descriptions (JD). It uses **rule-based Natural Language Processing (NLP)** techniques to extract key information (skills, experience, education) and compare them with job requirements provided via form data. 
 
 While the code uses basic NLP tools (`nltk`) and text extraction libraries (`PyPDF2`, `python-docx`), it **does not** currently include advanced machine learning or AI models. The scoring system is heuristic, based on matching keywords and phrases.
