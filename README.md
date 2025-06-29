@@ -42,24 +42,6 @@ While the code uses basic NLP tools (`nltk`) and text extraction libraries (`PyP
 
 ---
 
-## 📂 Project Structure
-
-resune_build/
-├── backend/
-│ ├── main.py # Main FastAPI server
-│ ├── data/
-│ │ └── resume_analyzer.db # SQLite DB (auto-created)
-│ ├── uploads/ # Uploaded resumes
-│ ├── requirements.txt # Python dependencies
-│ ├── README.md # Project documentation
-│ └── ...
-├── resume-jd-matcher/ # Additional module (converted to normal folder)
-└── ...
-
-
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Install Python Dependencies
@@ -72,3 +54,28 @@ pip install -r requirements.txt
 
 git clone https://github.com/Gajanand1219/resume-ai-analyzer.git
 cd resume-ai-analyzer
+
+
+## 📂 Project Structure
+resune_build/
+│
+├── backend/
+│   ├── main.py               # Main FastAPI server application
+│   ├── data/
+│   │   └── resume_analyzer.db   # SQLite database (auto-created)
+│   ├── uploads/
+│   │   ├── <uploaded resumes>   # Uploaded resume files (.pdf, .docx, .txt)
+│   ├── requirements.txt      # Python dependencies list
+│   ├── README.md             # Project documentation
+│   ├── utils.py              # (Optional) helper utilities
+│   ├── models.py             # (Optional) ORM models
+│   ├── schemas.py            # (Optional) Pydantic schemas
+│   └── __pycache__/          # Python bytecode cache
+│
+├── resume-jd-matcher/
+│   ├── matcher.py            # (Example) matching logic module
+│   ├── helpers.py            # (Example) shared helper functions
+│   ├── README.md             # Submodule readme (if needed)
+│   └── __pycache__/          # Python bytecode cache
+│
+└── README.md                 # Root project readme (overview, usage, setup)
