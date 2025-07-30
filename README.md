@@ -1,4 +1,4 @@
-# AI Analyzer Resume 
+# AI  Resume Analyzer
 
 
 
